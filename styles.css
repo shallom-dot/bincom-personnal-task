@@ -1,0 +1,44 @@
+.Banner {
+    position: relative;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.Banner-heading {
+    animation-name: anim;
+    animation-duration: 2s;
+}
+
+.Banner-par {
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: .10s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.my-details {
+    color: rgb(84, 123, 206);
+    line-height: 2rem;
+}
+
+.my-details li {
+    list-style-type: square;
+}
+
+.my-details li a:hover {
+    color: var(--primaryColor);
+    margin-left: 0.5rem;
+}
